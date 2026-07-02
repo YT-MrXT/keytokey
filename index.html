@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeyToKey</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+body{
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+header{
+  width:100%;
+  padding:30px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  backdrop-filter:blur(10px);
+  background:rgba(0,0,0,.4);
+  z-index:999;
+}
+.logo{
+  font-size:28px;
+  font-weight:800;
+}
+header a{
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+}
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:120px 20px 80px;
+  text-align:center;
+}
+.tag{
+  color:#8f8f8f;
+  font-size:14px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:30px;
+}
+.hero h1{
+  font-size:clamp(55px,8vw,110px);
+  font-weight:800;
+  line-height:1;
+}
+.hero h2{
+  font-size:clamp(35px,5vw,70px);
+  font-weight:700;
+  color:#5f5f5f;
+  margin-bottom:40px;
+}
+.download{
+  display:inline-block;
+  padding:18px 42px;
+  background:white;
+  color:#0071e3;
+  text-decoration:none;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:700;
+  transition:.3s;
+}
+.download:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 40px rgba(255,255,255,.15);
+}
+.feature{
+  padding:60px 8% 100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.feature-tag{
+  color:#8f8f8f;
+  font-size:13px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+.feature h3{
+  font-size:clamp(28px,4vw,44px);
+  font-weight:700;
+  max-width:700px;
+  line-height:1.2;
+  margin-bottom:60px;
+}
+.feature h3 span{
+  color:#0071e3;
+}
+.combo{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  flex-wrap:wrap;
+  justify-content:center;
+  position:relative;
+  width:min(900px,95%);
+}
+.combo::before{
+  content:"";
+  position:absolute;
+  inset:-60px;
+  background:radial-gradient(circle, rgba(0,113,227,.18), transparent 70%);
+  filter:blur(60px);
+  z-index:-1;
+}
+.key{
+  min-width:64px;
+  height:64px;
+  padding:0 18px;
+  border-radius:14px;
+  background:#0d0d0d;
+  border:1px solid #262626;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  font-weight:600;
+  color:#e5e5e5;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 10px 25px rgba(0,0,0,.5);
+}
+.key-trigger{
+  border-color:rgba(0,113,227,.6);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 0 0 4px rgba(0,113,227,.12), 0 10px 30px rgba(0,113,227,.25);
+  color:#fff;
+}
+.arrow{
+  font-size:26px;
+  color:#3d3d3d;
+}
+.result{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.result .key{
+  min-width:52px;
+  height:52px;
+  font-size:15px;
+  color:#8f8f8f;
+  border-color:#1c1c1c;
+}
+.feature p{
+  margin-top:50px;
+  color:#8f8f8f;
+  font-size:16px;
+  max-width:520px;
+  line-height:1.6;
+}
+footer{
+  padding:80px 10%;
+  border-top:1px solid #111;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:40px;
+}
+footer h3{
+  margin-bottom:15px;
+}
+footer ul{
+  list-style:none;
+}
+footer li{
+  color:#888;
+  margin:10px 0;
+}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="logo">KeyToKey®</div>
+  <a href="#">Início</a>
+</header>
+
+<section class="hero">
+  <div class="tag">
+    MACROS • AUTOMAÇÃO • PRODUTIVIDADE
+  </div>
+  <h1>KeyToKey</h1>
+  <h2>Automatiza. Repete. Ganha tempo.</h2>
+  <a class="download" href="/KeyToKey_Setup.exe" download="KeyToKey_Setup.exe">
+    Baixar agora
+  </a>
+</section>
+
+<section class="feature">
+  <div class="feature-tag">Uma tecla. Várias ações.</div>
+  <h3>Pressiona <span>1 tecla</span> e executa uma combinação inteira ao mesmo tempo.</h3>
+
+  <div class="combo">
+    <div class="key key-trigger">F1</div>
+    <div class="arrow">→</div>
+    <div class="result">
+      <div class="key">Ctrl</div>
+      <div class="key">Alt</div>
+      <div class="key">Shift</div>
+      <div class="key">W</div>
+    </div>
+  </div>
+
+  <p>Cria macros que disparam várias teclas em simultâneo, sequências automáticas ou combos personalizados — tudo com um único toque.</p>
+</section>
+
+<footer>
+  <div>
+    <h3>Produto</h3>
+    <ul>
+      <li>Início</li>
+      <li>Download</li>
+      <li>Sobre</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Recursos</h3>
+    <ul>
+      <li>Funcionalidades</li>
+      <li>Ajuda</li>
+      <li>Documentação</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Comunidade</h3>
+    <ul>
+      <li>Discord</li>
+      <li>Feedback</li>
+      <li>Blog</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Contacto</h3>
+    <ul>
+      <li>Email</li>
+      <li>Suporte</li>
+      <li>Termos</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
