@@ -81,6 +81,27 @@ header a{
   transform:translateY(-4px);
   box-shadow:0 15px 40px rgba(255,255,255,.15);
 }
+.video-title{
+  margin-top:130px;
+  font-size:clamp(22px,3vw,32px);
+  font-weight:700;
+  max-width:750px;
+  line-height:1.3;
+}
+.video-wrapper{
+  margin-top:35px;
+  width:min(800px,90%);
+  aspect-ratio:16/9;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+.video-wrapper iframe{
+  width:100%;
+  height:100%;
+  border:none;
+  display:block;
+}
 .feature{
   padding:60px 8% 100px;
   display:flex;
@@ -201,6 +222,11 @@ footer li{
   <a class="download" href="/KeyToKey_Setup.exe" download="KeyToKey_Setup.exe">
     Baixar agora
   </a>
+
+  <h3 class="video-title">Como fazer stall e wall dash no Rocket League com apenas um botão no teclado e mouse!</h3>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/RilH8KxYHuY" title="Como fazer stall e wall dash no Rocket League" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </section>
 
 <section class="feature">
